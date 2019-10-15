@@ -9,6 +9,8 @@ const BookContextProvider = (props) => {
         { title: 'the final empire', author: 'brandon sherman', id: 2 }
     ]);
     const addBook = (title, author) => {
+        console.log(title)
+        console.log(author)
         setBooks([...books, { title, author, id: uuid() }])
     };
     const removeBook = (id) => {
